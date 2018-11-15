@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appcompat="http://schemas.android.com/tools">
+
+    <item android:id="@+id/lang" android:title="Sprache">
+        <menu>
+            <group android:id="@+id/language" android:checkableBehavior="single">
+                <item  android:id="@+id/item1"
+                    android:title="Deutsch"/>
+                <item  android:id="@+id/item2"
+                    android:title="Englisch"/>
+                <item  android:id="@+id/item3"
+                    android:title="Spanisch"/>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/einstellungen" android:title="Einstellungen"/>
+    <item android:id="@+id/search"
+        android:title="Search..."
+        android:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="android.widget.SearchView" />
+</menu>
